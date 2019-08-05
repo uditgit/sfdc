@@ -2169,8 +2169,8 @@
         <members>KYWFEELocalProgramMapping__mdt</members>
         <members>KY_AnnouncementBanner__mdt</members>
         <members>Knowledge__kav</members>
-        <members>LOG_LogMessageSettings__c</members>
-        <members>LOG_LogMessage__c</members>
+        <!--<members>LOG_LogMessageSettings__c</members>-->
+        <!--<members>LOG_LogMessage__c</members>-->
         <members>Lead</members>
         <members>LeadCustomSetting__c</members>
         <members>LightningBaseURL__c</members>
@@ -2328,7 +2328,7 @@
         <members>Income__c</members>
         <members>KYWF_RegistrationEducationHistory</members>
         <members>Knowledge__kav</members>
-        <members>LOG_LogMessage__c</members>
+        <!--<members>LOG_LogMessage__c</members>-->
         <members>LiveText__ITR_Message__c</members>
         <members>LiveText__SMS_Message__c</members>
         <members>LiveText__SMS_Schedule__c</members>
@@ -2979,7 +2979,7 @@
         <members>Knowledge__kav-KYBC FAQs Layout</members>
         <members>Knowledge__kav-Knowledge Layout</members>
         <members>Knowledge__kav-Popular Links</members>
-        <members>LOG_LogMessage__c-LOG_LogMessage_Layout</members>
+        <!--<members>LOG_LogMessage__c-LOG_LogMessage_Layout</members>-->
         <members>Lead-KYBC_OnboardingGuest</members>
         <members>Lead-Lead Layout</members>
         <members>LinkedArticle-Linked Article Layout</members>
@@ -3606,8 +3606,8 @@
         <members>KOGWebservice__c</members>
         <members>KOG_Business_Partner_Onboarding_Details__c</members>
         <members>KOG_SAML_Attributes__c</members>
-        <members>LOG_LogMessageSettings__c</members>
-        <members>LOG_LogMessage__c</members>
+        <!--<members>LOG_LogMessageSettings__c</members>-->
+        <!--<members>LOG_LogMessage__c</members>-->
         <members>Lead</members>
         <members>LeadCustomSetting__c</members>
         <members>LightningBaseURL__c</members>
@@ -3690,7 +3690,7 @@
         <members>Exit__c</members>
         <members>Funding__c</members>
         <members>GoodCauseRequest__c</members>
-        <members>LOG_LogMessage__c</members>
+        <!--<members>LOG_LogMessage__c</members>-->
         <members>Lead</members>
         <members>NotificationRequest__c</members>
         <members>Office__c</members>
