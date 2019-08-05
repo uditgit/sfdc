@@ -148,7 +148,7 @@
 <!--<fileset dir="CRMQ2O\src" includes="layouts/Deal_Registration__c-Deal*.layout"/>-->
 
 
-<!--<fileset dir="CRMQ2O\src" includes="package.xml"/>-->
+<fileset dir="src" includes="package.xml"/>
 <fileset dir="src" includes="classes/PenaltySuspensionsTest.cls"/>
 <fileset dir="src" includes="classes/PenaltySuspensionsTest.cls-meta.xml"/>
 </zip>
