@@ -151,6 +151,7 @@
 <fileset dir="src" includes="package.xml"/>
 <fileset dir="src" includes="classes/PenaltySuspensionsTest.cls"/>
 <fileset dir="src" includes="classes/PenaltySuspensionsTest.cls-meta.xml"/>
+<fileset dir="src" includes="aura/POC_Accordian"/>
 </zip>
 <echo message = "${sf.username}" />
 <sf:deploy zipFile="deploy.zip" allowMissingFiles="true" username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll ="${sf.maxPoll}" rollbackOnError="true" > 
