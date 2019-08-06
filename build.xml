@@ -156,7 +156,7 @@
 <fileset dir="src" includes="customMetadata/ActivityDescriptionMapping.CancelRejected.md"/>
 <fileset dir="src" includes="customMetadata/ActivityDescriptionMapping.CreditRejected.md"/>
 <fileset dir="src" includes="customMetadata/ActivityDescriptionMapping.CreditAccepted.md"/>
-<fileset dir="src" includes="layouts/ActivityDescriptionMapping__mdt-Activity Description Mapping Layout.layout">
+<fileset dir="src" includes="layouts/ActivityDescriptionMapping__mdt-Activity Description Mapping Layout.layout"/>
 </zip>
 <echo message = "${sf.username}" />
 <sf:deploy zipFile="deploy.zip" allowMissingFiles="true" username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll ="${sf.maxPoll}" rollbackOnError="true" > 
