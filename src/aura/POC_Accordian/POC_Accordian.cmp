@@ -1,0 +1,50 @@
+<!--*****************************************************************************************
+ * NAME         :  c:POC_Accordion
+ * DESCRIPTION  :  Component used to make a section collapsible.
+ * @AUTHOR      : Lagan Kankane
+ * @DATE 04/17/2018
+ -->
+<aura:component >
+    <!-- Component Attributes-->
+    <!--<aura:attribute name="bIsClosed" type="Boolean" default="false" />-->
+  <!-- <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> -->
+    <aura:attribute name="sSectionTitle" type="String" default="Test"/>
+    <aura:attribute name="bgcolor" type="String" default="headerWithoutAccordion"/>
+    <aura:attribute name="bNotAccordion" type="Boolean" default="false"/> 
+    <aura:attribute name="bIsDefaultOpen" type="Boolean" default="true"/>
+    <aura:attribute name="sApplicationId" type="string" />
+    <!--<aura:attribute name="AppNameOfComponent" type="Map" 
+                    default="{sApplicationId:'v.sApplicationId',
+                             idApplication:'v.sApplicationId',
+                             applicationId:'v.sApplicationId'
+                             }" /> -->
+    <aura:attribute name="appIdname" type="string" />
+   
+    <aura:attribute name="bIsRegSummary" type="boolean"/>
+    <aura:attribute name="bIsDisabled" type="boolean"/>
+    
+    <aura:attribute name="body" type="Aura.Component[]"/>
+    <aura:attribute name="compName" type="String"/>
+    <aura:attribute name="compAttributes" type="List"/>
+    <aura:attribute name="compAttributeValues" type="List"/>
+   
+   <!--<aura:handler name="init" value="{!this}" action="{!c.doInit}"/> -->
+    <ul class="slds-accordion">
+        <li class="slds-accordion__list-item">
+            <section aura:id="accordion" class="{!v.bIsDefaultOpen ? 'slds-accordion__section slds-is-open' : 'slds-accordion__section'}">
+                <aura:if isTrue="{!v.bNotAccordion}">
+                    <div class="{!'slds-p-around_small ' +v.bgcolor}">
+                        <h1 class=" slds-text-heading_medium"><b>{!v.sSectionTitle}</b></h1>
+                    </div>
+                    <aura:set attribute="else">
+                        <div class="slds-accordion__summary">
+                            <lightning:button aura:id="accordion-action" label="{!v.sSectionTitle}" iconName="{!v.bIsDefaultOpen ? 'utility:chevrondown' : 'utility:chevronright'}" class="slds-section__title-action slds-p-left--small headerWithoutAccordion slds-accordion__summary-action no-border" onclick="{!c.toggleSection}"/>
+                        </div>
+                    </aura:set>
+                </aura:if>
+                <div aria-hidden="false" class="slds-accordion__content" id="accordion-details-01">{!v.body}</div>
+            </section>
+        </li>
+    </ul>
+    
+</aura:component>

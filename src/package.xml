@@ -17,7 +17,7 @@
         <name>ApprovalProcess</name>
     </types>
     <types>
-        <members>*</members>
+        <members>POC_GatePost</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
